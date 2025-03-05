@@ -98,19 +98,19 @@ i) Uniform shading conditions
 ii) Non-Uniform shading conditions
 
 I have designed a scaled-down version of PV arrays with 4 series and 6 Parallel strings to meet the rated power and voltage consideration.
-    * <p align="center"><img src="Images/scaleddown.jpg" alt="Scaled Down Array" style="display: block; margin: 0 auto;"></p>
-    * <p align="center"><img src="Images/scaleddownivpv.jpg" alt="Scaled Down Array I-V and P-V" style="display: block; margin: 0 auto;"></p>
+     <p align="center"><img src="Images/scaleddown.jpg" alt="Scaled Down Array" style="display: block; margin: 0 auto;"></p>
+     <p align="center"><img src="Images/scaleddownivpv.jpg" alt="Scaled Down Array I-V and P-V" style="display: block; margin: 0 auto;"></p>
 
 **Uniform Shading:**
 
 In uniform shading conditions, the I – V and P – V plots will not be disturbed. The magnitudes will be changed according to how many rows are shaded. Let’s see in detail with different rows shaded.
-    * <p align="center"><img src="Images/uniformshading.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
+     <p align="center"><img src="Images/uniformshading.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
 
 **Non–Uniform Shading:**
 
 In non-uniform shading conditions, the PV arrays are shaded randomly so that the variations in voltage and power are different. Let’s see in detail.
-    * <p align="center"><img src="Images/nonuni.jpg" alt="Non-Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
-    * <p align="center"><img src="Images/nonunimat.jpg
+     <p align="center"><img src="Images/nonuni.jpg" alt="Non-Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
+     <p align="center"><img src="Images/nonunimat.jpg
 
 ## Project Structure
 
