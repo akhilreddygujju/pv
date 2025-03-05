@@ -21,7 +21,7 @@ This project focuses on the design and simulation of a 1 MW solar array for Alba
 * Determined the Maximum Power Voltage (VMPP) and Maximum Power Current (IMPP) at the highest temperature (28°C).
 * Calculated the maximum power at 28°C.
 * Temperature data was pulled from: [https://weatherspark.com/y/24883/Average-Weather-in-Albany-New-York-United-States-Year-Round](https://weatherspark.com/y/24883/Average-Weather-in-Albany-New-York-United-States-Year-Round)
-     <p align="center"><img src="images/temp.jpg" alt="Temperature Data" style="display: block; margin: 0 auto;"></p>
+     <p align="center"><img src="Images/temp.jpg" alt="Temperature Data" style="display: block; margin: 0 auto;"></p>
 
 **Calculations:**
 
