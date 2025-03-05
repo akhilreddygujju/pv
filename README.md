@@ -81,9 +81,8 @@ This project focuses on the design and simulation of a 1 MW solar array for Alba
 * **Determining how many Parallel strings are required:**
 
     * No. of parallel strings required to meet 1MW power = 1493 panels / 27 panels per string = 55.29 (rounding up)
-    * No. of Parallel strings required 56 parallel strings
-      
-      <p align="center"><img src="Images/expecteddesign.jgp" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
+    * No. of Parallel strings required 56 parallel strings.
+     <p align="center"><img src="Images/expecteddesign.jpg" alt="Expected Array Design" style="display: block; margin: 0 auto;"></p>
 
       
 ## Section 3: Shading Analysis
@@ -167,13 +166,13 @@ In uniform shading, the Central MPPT adjusts the operating point of the entire a
 
 ## Project Structure
 
-** Documentation: Contains project-related documents.
-    * Final Project ES.pdf: Contains detailed calculations, plots, and analysis.
-    * IECE513_project.pdf: Project requirements and specifications.
-** Matlab: Contains MATLAB simulation files and scripts.
-     *`MPPT/`: Contains files related to Maximum Power Point Tracking analysis.
-     * `PV_panel/`: Contains files related to the PV panel model and characteristics.
-     * `Shading conditions/`: Contains files related to shading simulations and analysis.
+* **Documentation**: Contains project-related documents.
+    * `Final Project ES.pdf`: Contains detailed calculations, plots, and analysis.
+    * `IECE513_project.pdf`: Project requirements and specifications.
+* **Matlab**: Contains MATLAB simulation files and scripts.
+    * `MPPT/`: Contains files related to Maximum Power Point Tracking analysis.
+    * `PV_panel/`: Contains files related to the PV panel model and characteristics.
+    * `Shading conditions/`: Contains files related to shading simulations and analysis.
 
   
   
