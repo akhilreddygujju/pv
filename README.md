@@ -28,7 +28,7 @@ This project focuses on the design and simulation of a 1 MW solar array for Alba
 1.  **Calculation of Open Circuit voltage at lowest temperature -8℃:**
 
     * The PV panel will get the highest voltage at the lowest temperature. By using the datasheets of the PV panels provided, I am using “NES144/525- 530 W F 35mm MBB Half-cell Mono solar cell “.
-           <p align="center"><img src="images/datasheet.jpg" alt="Temperature Data" style="display: block; margin: 0 auto;"></p>
+           <p align="center"><img src="Images/datasheet.jpg" alt="Temperature Data" style="display: block; margin: 0 auto;"></p>
 
     * The following is the data of NES144-7-530M from the datasheet:
         * STC= 25℃ and 1000 W/m2
@@ -54,7 +54,7 @@ This project focuses on the design and simulation of a 1 MW solar array for Alba
 4.  **Maximum Power at 28℃:**
 
     * Pmpp= Vmpp * Impp= 48.89 * 13.70 = 669.793 W= 670W
-         <p align="center"><img src="images/Ivpv.jpg" alt="Temperature Data" style="display: block; margin: 0 auto;"></p>
+         <p align="center"><img src="Images/Ivpv.jpg" alt="Temperature Data" style="display: block; margin: 0 auto;"></p>
 
 
 ### Section 2: Array Design
@@ -83,7 +83,7 @@ This project focuses on the design and simulation of a 1 MW solar array for Alba
     * No. of parallel strings required to meet 1MW power = 1493 panels / 27 panels per string = 55.29 (rounding up)
     * No. of Parallel strings required 56 parallel strings
       
-      <p align="center"><img src="images/expecteddesign.jgp" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
+      <p align="center"><img src="Images/expecteddesign.jgp" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
 
       
 ## Section 3: Shading Analysis
@@ -102,20 +102,20 @@ i) Uniform shading conditions
 ii) Non-Uniform shading conditions
 
 I have designed a scaled-down version of PV arrays with 4 series and 6 Parallel strings to meet the rated power and voltage consideration.
-      <p align="center"><img src="images/scaleddown.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
-      <p align="center"><img src="images/scaleddownivpv.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
+      <p align="center"><img src="Images/scaleddown.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
+      <p align="center"><img src="Images/scaleddownivpv.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
 
 
 **Uniform Shading:**
 
 In uniform shading conditions, the I – V and P – V plots will not be disturbed. The magnitudes will be changed according to how many rows are shaded. Let’s see in detail with different rows shaded.
-      <p align="center"><img src="images/uniformshading.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
+      <p align="center"><img src="Images/uniformshading.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
 
 **Non–Uniform Shading:**
 
 In non-uniform shading conditions, the PV arrays are shaded randomly so that the variations in voltage and power are different. Let’s see in detail.
-      <p align="center"><img src="images/nonuni.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
-      <p align="center"><img src="images/nonunimat.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
+      <p align="center"><img src="Images/nonuni.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
+      <p align="center"><img src="Images/nonunimat.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
 
 ### Section 4: MPPT Comparison
 
@@ -140,14 +140,14 @@ In non-uniform shading conditions, the PV arrays are shaded randomly so that the
 In uniform shading, the Central MPPT adjusts the operating point of the entire array to maximize power output. As the percentage of shading increases, the MPP voltage and power decrease proportionally. This table clearly illustrates the impact of uniform shading on the overall power output of the solar array when using a Central MPPT.
 
 * Non uniform shading for different shading conditions:
-      <p align="center"><img src="images/nonunimat.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
+      <p align="center"><img src="Images/nonunimat.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
       
 ** MPPT per string:**
-        <p align="center"><img src="images/mpptpersting.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
+        <p align="center"><img src="Images/mpptpersting.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
 
 ** MPPT per module:**
-        <p align="center"><img src="images/mpptpermod.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
-        <p align="center"><img src="images/mpptpermodmat.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
+        <p align="center"><img src="Images/mpptpermod.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
+        <p align="center"><img src="Images/mpptpermodmat.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
 
 
 ## Simulation Results
@@ -163,13 +163,20 @@ In uniform shading, the Central MPPT adjusts the operating point of the entire a
 2.  Review the `Final Project ES.pdf` for detailed project information.
 3.  [Add instructions for running simulations or any other necessary steps here]
 
+
+
 ## Project Structure
 
-* `Final Project ES.pdf`: Contains detailed calculations, plots, and analysis.
-* `IECE513_project (2).pdf`: Project requirements and specifications.
-* `images/`: Contains images for the README.
-* [Add any code files, simulation files, or data files here]
+** Documentation: Contains project-related documents.
+    * Final Project ES.pdf: Contains detailed calculations, plots, and analysis.
+    * IECE513_project.pdf: Project requirements and specifications.
+** Matlab: Contains MATLAB simulation files and scripts.
+     *`MPPT/`: Contains files related to Maximum Power Point Tracking analysis.
+     * `PV_panel/`: Contains files related to the PV panel model and characteristics.
+     * `Shading conditions/`: Contains files related to shading simulations and analysis.
 
+  
+  
 ## Acknowledgments
 
 This project was completed as part of the ECE 513 course at the University at Albany.
