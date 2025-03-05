@@ -21,15 +21,14 @@ This project focuses on the design and simulation of a 1 MW solar array for Alba
 * Determined the Maximum Power Voltage (VMPP) and Maximum Power Current (IMPP) at the highest temperature (28°C).
 * Calculated the maximum power at 28°C.
 * Temperature data was pulled from: [https://weatherspark.com/y/24883/Average-Weather-in-Albany-New-York-United-States-Year-Round](https://weatherspark.com/y/24883/Average-Weather-in-Albany-New-York-United-States-Year-Round)
-     <p align="center"><img src="Images/temp.jpg" alt="Temperature Data" style="display: block; margin: 0 auto;"></p>
+    * <p align="center"><img src="Images/temp.jpg" alt="Temperature Data" style="display: block; margin: 0 auto;"></p>
 
 **Calculations:**
 
 1.  **Calculation of Open Circuit voltage at lowest temperature -8℃:**
 
     * The PV panel will get the highest voltage at the lowest temperature. By using the datasheets of the PV panels provided, I am using “NES144/525- 530 W F 35mm MBB Half-cell Mono solar cell “.
-           <p align="center"><img src="Images/datasheet.jpg" alt="Temperature Data" style="display: block; margin: 0 auto;"></p>
-
+        * <p align="center"><img src="Images/datasheet.jpg" alt="PV Panel Datasheet" style="display: block; margin: 0 auto;"></p>
     * The following is the data of NES144-7-530M from the datasheet:
         * STC= 25℃ and 1000 W/m2
         * Open circuit voltage, Voc= 49.30V
@@ -54,8 +53,7 @@ This project focuses on the design and simulation of a 1 MW solar array for Alba
 4.  **Maximum Power at 28℃:**
 
     * Pmpp= Vmpp * Impp= 48.89 * 13.70 = 669.793 W= 670W
-         <p align="center"><img src="Images/Ivpv.jpg" alt="Temperature Data" style="display: block; margin: 0 auto;"></p>
-
+        * <p align="center"><img src="Images/Ivpv.jpg" alt="I-V and P-V Characteristics" style="display: block; margin: 0 auto;"></p>
 
 ### Section 2: Array Design
 
@@ -82,10 +80,9 @@ This project focuses on the design and simulation of a 1 MW solar array for Alba
 
     * No. of parallel strings required to meet 1MW power = 1493 panels / 27 panels per string = 55.29 (rounding up)
     * No. of Parallel strings required 56 parallel strings.
-     <p align="center"><img src="Images/expecteddesign.jpg" alt="Expected Array Design" style="display: block; margin: 0 auto;"></p>
+        * <p align="center"><img src="Images/expecteddesign.jpg" alt="Expected Array Design" style="display: block; margin: 0 auto;"></p>
 
-      
-## Section 3: Shading Analysis
+### Section 3: Shading Analysis
 
 * Simulated the scaled-down model of the array under uniform and non-uniform shading conditions.
 * Analyzed the impact of different percentages of shading (25%, 50%, and 75%) on the I-V and P-V characteristics of the array.
@@ -101,68 +98,19 @@ i) Uniform shading conditions
 ii) Non-Uniform shading conditions
 
 I have designed a scaled-down version of PV arrays with 4 series and 6 Parallel strings to meet the rated power and voltage consideration.
-      <p align="center"><img src="Images/scaleddown.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
-      <p align="center"><img src="Images/scaleddownivpv.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
-
+    * <p align="center"><img src="Images/scaleddown.jpg" alt="Scaled Down Array" style="display: block; margin: 0 auto;"></p>
+    * <p align="center"><img src="Images/scaleddownivpv.jpg" alt="Scaled Down Array I-V and P-V" style="display: block; margin: 0 auto;"></p>
 
 **Uniform Shading:**
 
 In uniform shading conditions, the I – V and P – V plots will not be disturbed. The magnitudes will be changed according to how many rows are shaded. Let’s see in detail with different rows shaded.
-      <p align="center"><img src="Images/uniformshading.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
+    * <p align="center"><img src="Images/uniformshading.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
 
 **Non–Uniform Shading:**
 
 In non-uniform shading conditions, the PV arrays are shaded randomly so that the variations in voltage and power are different. Let’s see in detail.
-      <p align="center"><img src="Images/nonuni.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
-      <p align="center"><img src="Images/nonunimat.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
-
-### Section 4: MPPT Comparison
-
-## Section 4: MPPT Comparison
-
-* Compared the performance of different MPPT techniques under various shading conditions.
-    * Central MPPT
-    * MPPT per string
-    * MPPT per module
-* Analysis included P-V plots for different shading percentages and MPPT configurations.
-
-**Central MPPT Analysis:**
-* Under uniform shading conditions, the Central MPPT performance can be summarized as follows:
-
-| S.NO | MPP Unshaded Voltage | MPP Unshaded Power | % of Shading | MPP Voltage | MPP Power |
-|---|---|---|---|---|---|
-| 1 | 1342 Volts | 1.074 MW | 25% | 998 Volts | 0.802 MW |
-| 2 | 1342 Volts | 1.074 MW | 50% | 659 Volts | 0.530 MW |
-| 3 | 1342 Volts | 1.074 MW | 75% | 321 Volts | 0.257 MW |
-
-
-In uniform shading, the Central MPPT adjusts the operating point of the entire array to maximize power output. As the percentage of shading increases, the MPP voltage and power decrease proportionally. This table clearly illustrates the impact of uniform shading on the overall power output of the solar array when using a Central MPPT.
-
-* Non uniform shading for different shading conditions:
-      <p align="center"><img src="Images/nonunimat.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
-      
-** MPPT per string:**
-        <p align="center"><img src="Images/mpptpersting.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
-
-** MPPT per module:**
-        <p align="center"><img src="Images/mpptpermod.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
-        <p align="center"><img src="Images/mpptpermodmat.jpg" alt="Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
-
-
-## Simulation Results
-
-* Detailed I-V and P-V characteristic plots for various shading scenarios.
-* Comparison of MPPT performance under different shading conditions.
-* Analysis of the impact of shading on overall array performance.
-* Documentation of the PV model and array design calculations.
-
-## Usage
-
-1.  Clone the repository.
-2.  Review the `Final Project ES.pdf` for detailed project information.
-3.  [Add instructions for running simulations or any other necessary steps here]
-
-
+    * <p align="center"><img src="Images/nonuni.jpg" alt="Non-Uniform Shading Plots" style="display: block; margin: 0 auto;"></p>
+    * <p align="center"><img src="Images/nonunimat.jpg
 
 ## Project Structure
 
@@ -174,7 +122,6 @@ In uniform shading, the Central MPPT adjusts the operating point of the entire a
     * `PV_panel/`: Contains files related to the PV panel model and characteristics.
     * `Shading conditions/`: Contains files related to shading simulations and analysis.
 
-  
   
 ## Acknowledgments
 
